@@ -3,7 +3,6 @@ from wordcloud import WordCloud
 import pandas as pd
 from collections import Counter
 
-
 extract = URLExtract()
 
 def fetch_stats(selected_user,df):
@@ -78,7 +77,6 @@ def most_common_words(selected_user,df):
 
     most_common_df = pd.DataFrame(Counter(words).most_common(20))
     return most_common_df
-
 
 
 def monthly_timeline(selected_user,df):
